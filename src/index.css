@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primaryColor: #092143;
+  --btnBgColor: #40b884;
+  --whiteCoor: #ffff;
+  --subHeading-textColor: #f9a81a;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 20px;
+  margin-inline: auto;
+}
+
+/* ***************spinner style css code ***************/
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #766DF4);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ****************navbar style start************************ */
+
+.active {
+  color: red;
+}
+
+
+.header {
+  background-color: var(--primaryColor);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+.mainlogo {
+  width: 67%;
+}
+
+.searchbar {
+  padding: 12px 153px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid var(--whiteCoor);
+  text-align: start;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navlinks .navchild {
+  /* color: black; */
+  text-decoration: none;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+/* dropdown menu for dashboar */
+
+/* CSS for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the button that opens the dropdown */
+.navchild {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.navchild a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* border-radius: 8px; */
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when hovering over the trigger */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* ****************Home/main section style start************************ */
+
+.mainsection {
+  background-image: url('/images/bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+.mainContnet {
+  margin-top: 187px;
+  line-height: 3rem;
+  font-size: 34px;
+  color: var(--whiteCoor);
+}
+
+
+.heading {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.subHeading {
+  font-size: 30px;
+}
+
+.mainContnet .subHeading {
+  color: var(--subHeading-textColor);
+}
+
+.para {
+  font-size: 20px;
+}
+
+
+.btn {
+  background-color: var(--btnBgColor);
+  padding: 5px 44px;
+  color: var(--whiteCoor);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+.btn:hover {
+  background-color: var(--whiteCoor);
+  color: var(--btnBgColor);
+
+}
+
+.userAccount {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  gap: 2rem;
+  align-items: center;
+
+
+}
+
+.left_account {
+  border: 1px solid gray;
+  width: 50%;
+  border-radius: 5px;
+  height: 360px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  margin: 34px;
+
+}
+
+.logincontent {
+  line-height: 33px;
+}
+
+.form input {
+  padding: 12px 34px;
+}
+
+.loginBtn {
+  padding: 12px 23px;
+  background-color: var(--primaryColor);
+  color: var(--whiteCoor);
+  border-radius: 5px;
+  border: none;
+  border: 1px solid var(--primaryColor);
+  transition: 0.3s ease-in
+}
+
+/* .loginBtn:hover{
+   background-color: var(--whiteCoor);
+   color: var(--primaryColor);
+} */
+
+
+.right_account {
+  border: 1px solid gray;
+  width: 50%;
+  padding: 34px;
+  height: 360px;
+  line-height: 23px;
+}
+
+.right_account p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 422px;
+}
+
+.form input {
+  padding: 12px 34px;
+}
+
+
+
+
+
+/* ****************Home section 2nd section style start************************ */
+
+.sec_Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 23px;
+
+}
+
+.left_section {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+.textUponImg {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 10px;
+  font-size: 34px;
+  line-height: 33px;
+}
+
+.textUponImg p {
+  margin-top: 34px;
+  font-size: 17px;
+}
+
+.offBtn {
+  background: transparent;
+  border: 1px solid black;
+  padding: 12px 29px;
+  margin-top: 12px;
+  border-radius: 5px;
+
+}
+
+.left_section img {
+  width: 100%;
+  border-radius: 8px;
+  transition: scale 400ms;
+}
+
+.left_section img:hover {
+  scale: 110%;
+}
+
+.right_section {
+  width: 50%;
+}
+
+.childSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 14px;
+  overflow: hidden;
+}
+
+.childSec img {
+  width: 50%;
+  border-radius: 8px;
+  transition: scale 400ms;
+}
+
+.childSec img:hover {
+  scale: 110%;
+}
+
+
+
+
+/**************************** admin dashboard style *************************** */
+
+.adminMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 28px;
+  width: 74%;
+}
+
+.adminMenu a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 19px;
+  color: black;
+}
+
+.adminMenu a:hover {
+  color: gray;
+}
+
+.menuContent {
+  display: flex;
+}
+
+.editDeleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5px;
+}
+
+.editDeleteBtn .btns {
+  padding: 12px 34px;
+  border: none;
+  border-radius: 5px;
+}
+
+.editDeleteBtn .btns:hover {
+  background-color: gainsboro;
+}
+
+.editDeleteBtn .editBtn {
+  background-color: rgba(12, 121, 12, 0.884);
+  color: white;
+}
+
+.editDeleteBtn .deleteBtn {
+  background-color: rgb(244, 66, 21);
+  color: white;
+}
+
+.productForm {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.productForm input {
+  padding: 12px 44px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 334px;
+
+}
+
+.productBtn {
+  padding: 12px 23px;
+}
+
+.uploadPhoto {
+  padding: 12px 23px;
+  background-color: gainsboro;
+}
+
+.photo {
+  margin-top: 34px;
+}
+
+.imgpreview {
+  margin-top: 34px;
+}
+
+
+.mainCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.childCard {
+  width: calc(33.33% - 10px);
+  /* 33.33% width for each card with some spacing */
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardImg {
+  max-width: 100%;
+}
+
+.editDeleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.editDeleteBtn button {
+  padding: 9px 23px;
+}
+
+
+
+
+/* *******************all prodcut list show style******************  */
+
+
+/* .filterSection{
+    position: fixed;
+    top: 150px;
+    left : 40px;
+    width: 333px
+  }
+
+  .mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  */
+
+.childCard img {
+  width: 100%;
+}
+
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterSection {
+  position: sticky;
+  top: 90px;
+  width: 233px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  height: 450px;
+}
+
+.productSection {
+  flex: 2;
+}
+
+.mainCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.childCard {
+  width: calc(30.33% - 10px);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 34px;
+}
+
+/* ****************cart detais style ************ */
+
+.moredetailsCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.authChecking {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.addedCartContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+  gap: 2rem;
+}
+
+.left_cart_Items {
+  width: 60%;
+}
+
+.left_cart_Items img {
+  width: 100%;
+}
+
+.cart_content {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  gap: 2rem;
+  margin: 23px;
+}
+
+.cart_content img {
+  width: 20%;
+}
+
+.removeBtn {
+  background-color: rgb(244, 66, 21);
+  color: var(--whiteCoor);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.removeBtn:hover {
+  background-color: rgb(172, 68, 42);
+
+}
+
+
+
+.right_checkout_option {
+  position: sticky;
+  top: 150px;
+  height: 333px;
+  width: 343px;
+  width: 40%;
+  margin: 23px;
+}
+
+
+
+
+
+/* new product home page style section */
+.subHeadings {
+  text-align: center;
+  margin: 24px;
+}
+
+.newProductSec {
+  background-color: #f2f5fa;
+}
+
+.footer {
+  background: linear-gradient(169deg, rgba(9, 33, 67, 1), rgba(84, 125, 182, 1) 100%);
+  ;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffff;
+  height: 443px;
+  margin-top: 84px;
+}
+
+.g_items ul li {
+  margin: 34px;
+}
+
+.gridChild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.gridSibling p:hover {
+  color: var(--btnBgColor);
+  cursor: pointer;
+}
+
+
+
+/* ----------rough desing---------- */
+.both_Btn {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.moreDetailBtn {
+  background-color: var(--btnBgColor);
+  color: var(--whiteCoor);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.moreDetailBtn:hover {
+  background-color: #1e8e5d;
+}
+
+.cartBtn {
+  background-color: var(--primaryColor);
+  color: var(--whiteCoor);
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.cartBtn:hover {
+  background-color: #194179;
+
+}
+
+
+/* my oders */
+
+.tableRow{
+
+
+}
+
+
+.tableContainer {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tableContainer th, .tableContainer td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.tableContainer thead {
+  background-color: #f2f2f2;
+}
+
+.tableContainer th {
+  background-color: var(--primaryColor);
+  color: white;
+}
