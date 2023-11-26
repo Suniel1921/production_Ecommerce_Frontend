@@ -164,7 +164,7 @@ const Cart = () => {
                     }}
                   />
 
-                  <button onClick={handlePayment}
+                  <button className="both_Btn paymentBtn" onClick={handlePayment}
                    disabled={!clientToken || !cart?.length || loading || !instance}>
                     {/* disabled={!loading || !instance || !auth?.user?.address} */}
                     {loading ? "Processing..." : "Make Payment"}

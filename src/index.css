@@ -703,6 +703,17 @@
 
 }
 
+.paymentBtn{
+  background-color: var(--btnBgColor);
+  color: var(--whiteCoor);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.paymentBtn:hover {
+  background-color: #1e8e5d;
+
+}
+
 
 /* my oders */
 
